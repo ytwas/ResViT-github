@@ -4,7 +4,8 @@ from data import CreateDataLoader
 from models import create_model
 from util.visualizer import Visualizer
 import numpy as np, h5py 
-from skimage.measure import compare_psnr as psnr
+#from skimage.measure import compare_psnr as psnr
+from skimage.metrics import peak_signal_noise_ratio as psnr
 import os
 def print_log(logger,message):
     print(message, flush=True)
